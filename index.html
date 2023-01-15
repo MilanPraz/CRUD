@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://bootswatch.com/5/yeti/bootstrap.min.css">
+
+    <title>Bookmark-Site</title>
+    <style>
+
+
+
+    </style>
+</head>
+<body onload="showName();">
+    <div class="container">
+    <div class="form-group">
+        <h1 class="display-block text-primary text-center">Student's Detail</h1>
+    </div>
+    <div id="msg">
+        
+        
+    </div>
+
+    <div class="form-group">
+        <form id="bookmark-form">
+            <div>
+            <label class="display-block text-primary text-center">Student Name</label>
+
+            <input class="form-control" type="text" id="name" placeholder="Enter Student name">
+        </div>
+        <input type="hidden" id="saveindex">
+        
+        <input class="btn btn-primary btn-block mt-3" id="addbtn" type="submit" value="Add">
+        <button class="btn btn-secondary btn-block mt-3" type="button" id="savebtn" style="display: none;">Save</button>
+        <button class="btn btn-block btn-danger mt-3" type="button" id="delall">Delete All</button>
+        </form>
+    </div>
+    <div id="output"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
